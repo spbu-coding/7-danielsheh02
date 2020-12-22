@@ -35,5 +35,5 @@ $(LOGS): $(TEST_DIR)/%.log: $(TEST_DIR)/%.in $(TEST_DIR)/%.out $(EXEC_FILE)
 		echo Test $* - was successful; \
 	else \
 		echo Test $* - was failed; \
-		touch $(PRESENCE_ERR) ; \
+		touch $(PRESENCE_ERR); \
 	fi
